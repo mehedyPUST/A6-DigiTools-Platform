@@ -1,0 +1,162 @@
+[
+    {
+        "id": 1,
+        "name": "ProRank SEO Suite",
+        "description": "Comprehensive SEO toolkit for keyword tracking, backlink analysis, and site audits. Perfect for agencies and in-house teams looking to dominate search results.",
+        "price": 49.99,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "Real-time keyword tracking",
+            "Back-link analysis tool",
+            "Technical SEO audit",
+            "Competitor research"
+        ],
+        "icon": "🚀"
+    },
+    {
+        "id": 2,
+        "name": "PixelFlow Designer",
+        "description": "AI-powered graphic design tool that creates stunning social media posts, logos, and marketing materials in minutes. No design experience needed.",
+        "price": 299.00,
+        "period": "yearly",
+        "tag": "best seller",
+        "tagType": "best seller",
+        "features": [
+            "10,000+ templates",
+            "AI background remover",
+            "Brand kit feature",
+            "Team collaboration"
+        ],
+        "icon": "🎨"
+    },
+    {
+        "id": 3,
+        "name": "DataMaster Pro",
+        "description": "Advanced data visualization and business intelligence software. Transform complex data into beautiful, interactive dashboards and reports.",
+        "price": 79.00,
+        "period": "one-time",
+        "tag": "new",
+        "tagType": "new",
+        "features": [
+            "Interactive dashboards",
+            "AI-driven insights",
+            "Real-time data sync",
+            "Export to PPT/PDF"
+        ],
+        "icon": "📊"
+    },
+    {
+        "id": 4,
+        "name": "SecureVault Password Manager",
+        "description": "Enterprise-grade password security with encrypted storage, automatic form filling, and cross-device synchronization. Keep all your credentials safe.",
+        "price": 2.99,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "Unlimited passwords",
+            "Dark web monitoring",
+            "Secure sharing",
+            "Biometric login"
+        ],
+        "icon": "🔒"
+    },
+    {
+        "id": 5,
+        "name": "ChatFlow AI Assistant",
+        "description": "Generative AI chatbot for customer support automation. Train on your documents and website to provide instant, accurate responses 24/7.",
+        "price": 199.00,
+        "period": "yearly",
+        "tag": "new",
+        "tagType": "new",
+        "features": [
+            "Custom training data",
+            "Multi-language support",
+            "Slack & WhatsApp integration",
+            "Analytics dashboard"
+        ],
+        "icon": "🤖"
+    },
+    {
+        "id": 6,
+        "name": "TaskSpark Pro",
+        "description": "Minimalist project management tool with kanban boards, time tracking, and automated workflows. Ideal for remote teams and freelancers.",
+        "price": 9.99,
+        "period": "monthly",
+        "tag": "best seller",
+        "tagType": "best seller",
+        "features": [
+            "Unlimited projects",
+            "Time tracking",
+            "Automated workflows",
+            "File storage (100GB)"
+        ],
+        "icon": "⚡"
+    },
+    {
+        "id": 7,
+        "name": "MailForge Email Builder",
+        "description": "Drag-and-drop email marketing platform with advanced analytics and A/B testing. Create responsive emails that convert.",
+        "price": 15.00,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "Drag-and-drop editor",
+            "A/B testing",
+            "List segmentation",
+            "Delivery optimization"
+        ],
+        "icon": "📧"
+    },
+    {
+        "id": 8,
+        "name": "CodeCanvas IDE",
+        "description": "Cloud-based integrated development environment with real-time collaboration, debugging tools, and built-in Git support.",
+        "price": 149.00,
+        "period": "yearly",
+        "tag": "new",
+        "tagType": "new",
+        "features": [
+            "Real-time collaboration",
+            "Integrated terminal",
+            "50+ language support",
+            "One-click deployment"
+        ],
+        "icon": "💻"
+    },
+    {
+        "id": 9,
+        "name": "SocialPulse Analytics",
+        "description": "Social media management and analytics tool. Schedule posts, track engagement, and analyze competitors across all major platforms.",
+        "price": 29.99,
+        "period": "monthly",
+        "tag": "best seller",
+        "tagType": "best seller",
+        "features": [
+            "Post scheduling",
+            "Hashtag analytics",
+            "Competitor tracking",
+            "Unlimited reports"
+        ],
+        "icon": "📱"
+    },
+    {
+        "id": 10,
+        "name": "DocuSign Easy",
+        "description": "Digital document signing and workflow automation. Get legally binding signatures in seconds with audit trails and team management.",
+        "price": 499.00,
+        "period": "one-time",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "Unlimited signatures",
+            "Audit trail",
+            "Team management",
+            "API access"
+        ],
+        "icon": "✍️"
+    }
+]
