@@ -1,9 +1,11 @@
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import Banner from './components/banner/Banner'
 import Navbar from './components/navbar/Navbar'
 import Products from './components/products/Products'
 import Statistics from './components/statistics/Statistics'
+import Cart from './components/cart/Cart'
+import ProductsHeading from './components/products/productHeading/ProductsHeading'
 
 
 const productsData = async () => {
@@ -12,7 +14,8 @@ const productsData = async () => {
 }
 const productsPromise = productsData();
 function App() {
-
+  const [activeTab, setActiveTab] = useState('products');
+  const [cart, setCart] = useState([]);
 
   return (
     <>
@@ -25,9 +28,21 @@ function App() {
       <div className='mt-10'>
         <Statistics></Statistics>
       </div>
+      <ProductsHeading setActiveTab={setActiveTab} activeTab={activeTab} setCart={setCart} cart={cart} ></ProductsHeading>
       <div className='mt-10'>
         <Suspense fallback={<div>Loading...........</div>}>
-          <Products productsPromise={productsPromise}></Products>
+
+          {
+            activeTab === 'products' ?
+              <Products
+                productsPromise={productsPromise}
+                activeTab={activeTab}
+                setActiveTab={setActiveTab}
+                cart={cart}
+                setCart={setCart}
+              ></Products>
+              : <Cart cart={cart} setCart={setCart}></Cart>
+          }
         </Suspense>
       </div>
 
@@ -36,3 +51,5 @@ function App() {
 }
 
 export default App
+
+
