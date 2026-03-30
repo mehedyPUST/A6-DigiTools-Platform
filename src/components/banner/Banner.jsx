@@ -23,7 +23,6 @@ const Banner = () => {
                 <div className="w-[90vw] md:max-w-[540px] mx-auto md:mx-0">
                     <img className="w-full h-full object-cover" src={bannerImg} alt="" />
 
-                    dfghfdhfd
                 </div>
 
             </div>
