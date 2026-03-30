@@ -17,8 +17,9 @@ function App() {
   return (
     <>
 
-      <div className='w-11/12 mx-auto px-2 sm:px-0'>
-        <Navbar ></Navbar>
+
+      <div className=' bg-white  py-3 shadow-md  sticky top-0 z-50'>
+        <Navbar></Navbar>
       </div>
       <Banner></Banner>
       <div className='mt-10'>

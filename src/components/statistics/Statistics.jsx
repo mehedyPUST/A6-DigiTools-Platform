@@ -2,7 +2,7 @@ import React from 'react';
 
 const Statistics = () => {
     return (
-        <div className="bg-linear-to-t from-purple-700 to-purple-500 py-8">
+        <div className=" w-11/12 mx-auto bg-linear-to-t from-purple-700 to-purple-500 py-8">
             <div className="max-w-5xl mx-auto flex justify-between items-center text-white text-center">
 
                 {/* Item 1 */}
