@@ -1,20 +1,15 @@
-
 import './App.css'
+import Navbar from './components/navbar/Navbar'
 
 function App() {
 
 
   return (
     <>
-      nav
-      banner
-      products-- heading-- product card
-      cart
 
-      3 steps
-
-      pricing
-
+      <div className='w-11/12 mx-auto px-2 sm:px-0'>
+        <Navbar ></Navbar>
+      </div>
 
     </>
   )
