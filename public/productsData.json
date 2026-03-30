@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "ProRank SEO Suite",
-        "description": "Comprehensive SEO toolkit for keyword tracking, backlink analysis, and site audits. Perfect for agencies and in-house teams looking to dominate search results.",
+        "description": "Comprehensive SEO toolkit for keyword tracking, back-link analysis, and site audits. Perfect for agencies and in-house teams looking to dominate search results.",
         "price": 49.99,
         "period": "monthly",
         "tag": "popular",
@@ -13,7 +13,7 @@
             "Technical SEO audit",
             "Competitor research"
         ],
-        "icon": "🚀"
+        "icon": "https://i.ibb.co.com/ynzZDRrS/prorank.png"
     },
     {
         "id": 2,
@@ -29,7 +29,7 @@
             "Brand kit feature",
             "Team collaboration"
         ],
-        "icon": "🎨"
+        "icon": "https://i.ibb.co.com/wHPxsLH/pixelflow.png"
     },
     {
         "id": 3,
@@ -45,7 +45,7 @@
             "Real-time data sync",
             "Export to PPT/PDF"
         ],
-        "icon": "📊"
+        "icon": "https://i.ibb.co.com/XZ2N3hSV/datamaster.jpg"
     },
     {
         "id": 4,
@@ -61,7 +61,7 @@
             "Secure sharing",
             "Biometric login"
         ],
-        "icon": "🔒"
+        "icon": "https://i.ibb.co.com/C5RbhbqW/securevault.jpg"
     },
     {
         "id": 5,
@@ -77,7 +77,7 @@
             "Slack & WhatsApp integration",
             "Analytics dashboard"
         ],
-        "icon": "🤖"
+        "icon": "https://i.ibb.co.com/tMjV02mz/chatflow.jpg"
     },
     {
         "id": 6,
@@ -93,7 +93,7 @@
             "Automated workflows",
             "File storage (100GB)"
         ],
-        "icon": "⚡"
+        "icon": "https://i.ibb.co.com/jkD1z8hm/taskspark.jpg"
     },
     {
         "id": 7,
@@ -109,7 +109,7 @@
             "List segmentation",
             "Delivery optimization"
         ],
-        "icon": "📧"
+        "icon": "https://i.ibb.co.com/0pxfLVpj/mail.jpg"
     },
     {
         "id": 8,
@@ -125,7 +125,7 @@
             "50+ language support",
             "One-click deployment"
         ],
-        "icon": "💻"
+        "icon": "https://i.ibb.co.com/TDky9WPT/codecanvas.jpg"
     },
     {
         "id": 9,
@@ -141,7 +141,7 @@
             "Competitor tracking",
             "Unlimited reports"
         ],
-        "icon": "📱"
+        "icon": "https://i.ibb.co.com/vvQg8VGj/socialanaly.jpg"
     },
     {
         "id": 10,
@@ -157,6 +157,6 @@
             "Team management",
             "API access"
         ],
-        "icon": "✍️"
+        "icon": "https://i.ibb.co.com/CpcBZRHm/sign.jpg"
     }
 ]
