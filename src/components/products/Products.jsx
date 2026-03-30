@@ -7,8 +7,8 @@ const Products = () => {
             <ProductsHeading></ProductsHeading>
             <div className='flex justify-center mb-4 mt-4'>
                 <div role="tablist" className="tabs tabs-box">
-                    <a role="tab" className=" btn btn-primary">Products</a>
-                    <a role="tab" className="tab ">Cart(0)</a>
+                    <button role="tab" className=" btn btn-primary">Products</button>
+                    <button role="tab" className="tab ">Cart(0)</button>
                 </div>
             </div>
             <ProductCard></ProductCard>
