@@ -3,11 +3,11 @@ import { Check } from 'lucide-react'; // or import from 'react-icons/fa' or whic
 
 const ProductCard = ({ products }) => {
     return (
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-6  mx-auto'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 mx-auto'>
             {
                 products.map((product) => {
                     return (
-                        <div key={product.id} className=" bg-gray-100 rounded-2xl p-6 shadow-sm relative">
+                        <div key={product.id} className=" bg-white border-2 border-gray-50 rounded-2xl p-6 shadow-md relative">
 
                             <div className={`badge badge-soft  px-4 py-3 font-bold ${product.tag === 'Best Seller' ? 'badge-warning' : product.tag === 'New' ? 'badge-success' : product.tag === "Popular" ? "badge-primary" : 'badge-info'} absolute top-6 right-6`}>{product.tag}</div>
 
@@ -29,7 +29,7 @@ const ProductCard = ({ products }) => {
                             {/* Price */}
                             <div className="mb-4">
                                 <span className="text-2xl font-bold text-gray-900">${product.price}</span>
-                                <span className="text-gray-500 text-sm">/{product.billingPeriod || 'Mo'}</span>
+                                <span className="text-gray-500 text-sm">/{product.period === 'monthly' ? 'Mo' : product.period === 'yearly' ? 'Yr' : 'One-Time'}</span>
                             </div>
 
                             {/* Features */}
