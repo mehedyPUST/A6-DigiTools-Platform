@@ -17,22 +17,6 @@
     },
     {
         "id": 2,
-        "name": "PixelFlow Designer",
-        "description": "AI-powered graphic design tool that creates stunning social media posts, logos, and marketing materials in minutes. No design experience needed.",
-        "price": 299.00,
-        "period": "yearly",
-        "tag": "best seller",
-        "tagType": "best seller",
-        "features": [
-            "10,000+ templates",
-            "AI background remover",
-            "Brand kit feature",
-            "Team collaboration"
-        ],
-        "icon": "https://i.ibb.co.com/wHPxsLH/pixelflow.png"
-    },
-    {
-        "id": 3,
         "name": "DataMaster Pro",
         "description": "Advanced data visualization and business intelligence software. Transform complex data into beautiful, interactive dashboards and reports.",
         "price": 79.00,
@@ -48,7 +32,7 @@
         "icon": "https://i.ibb.co.com/XZ2N3hSV/datamaster.jpg"
     },
     {
-        "id": 4,
+        "id": 3,
         "name": "SecureVault Password Manager",
         "description": "Enterprise-grade password security with encrypted storage, automatic form filling, and cross-device synchronization. Keep all your credentials safe.",
         "price": 2.99,
@@ -64,7 +48,7 @@
         "icon": "https://i.ibb.co.com/C5RbhbqW/securevault.jpg"
     },
     {
-        "id": 5,
+        "id": 4,
         "name": "ChatFlow AI Assistant",
         "description": "Generative AI chatbot for customer support automation. Train on your documents and website to provide instant, accurate responses 24/7.",
         "price": 199.00,
@@ -80,7 +64,7 @@
         "icon": "https://i.ibb.co.com/tMjV02mz/chatflow.jpg"
     },
     {
-        "id": 6,
+        "id": 5,
         "name": "TaskSpark Pro",
         "description": "Minimalist project management tool with kanban boards, time tracking, and automated workflows. Ideal for remote teams and freelancers.",
         "price": 9.99,
@@ -96,7 +80,7 @@
         "icon": "https://i.ibb.co.com/jkD1z8hm/taskspark.jpg"
     },
     {
-        "id": 7,
+        "id": 6,
         "name": "MailForge Email Builder",
         "description": "Drag-and-drop email marketing platform with advanced analytics and A/B testing. Create responsive emails that convert.",
         "price": 15.00,
@@ -112,7 +96,7 @@
         "icon": "https://i.ibb.co.com/0pxfLVpj/mail.jpg"
     },
     {
-        "id": 8,
+        "id": 7,
         "name": "CodeCanvas IDE",
         "description": "Cloud-based integrated development environment with real-time collaboration, debugging tools, and built-in Git support.",
         "price": 149.00,
@@ -128,7 +112,7 @@
         "icon": "https://i.ibb.co.com/TDky9WPT/codecanvas.jpg"
     },
     {
-        "id": 9,
+        "id": 8,
         "name": "SocialPulse Analytics",
         "description": "Social media management and analytics tool. Schedule posts, track engagement, and analyze competitors across all major platforms.",
         "price": 29.99,
@@ -144,7 +128,7 @@
         "icon": "https://i.ibb.co.com/vvQg8VGj/socialanaly.jpg"
     },
     {
-        "id": 10,
+        "id": 9,
         "name": "DocuSign Easy",
         "description": "Digital document signing and workflow automation. Get legally binding signatures in seconds with audit trails and team management.",
         "price": 499.00,

@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { use } from 'react';
 import ProductsHeading from './productHeading/ProductsHeading';
 import ProductCard from "./productCard/ProductCard"
-const Products = () => {
+const Products = ({ productsPromise }) => {
+    const products = use(productsPromise);
+    console.log(products)
     return (
         <div>
             <ProductsHeading></ProductsHeading>
@@ -11,7 +13,9 @@ const Products = () => {
                     <button role="tab" className="tab ">Cart(0)</button>
                 </div>
             </div>
-            <ProductCard></ProductCard>
+
+            <ProductCard products={products}></ProductCard>
+
         </div>
     );
 };

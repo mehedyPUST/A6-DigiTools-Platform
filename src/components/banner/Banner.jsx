@@ -6,8 +6,8 @@ import { CiPlay1 } from 'react-icons/ci';
 const Banner = () => {
     return (
 
-        <div className='mx-auto'>
-            <div className=" w-11/12 mx-auto min-h-fit md:min-h-[500px] flex flex-col md:flex-row  gap-[53px] justify-center items-center mt-6 md:mt-25 pb-6 md:pb-0 pt-6 md:pt-0">
+        <div className='mx-auto  '>
+            <div className=" w-11/12 mx-auto min-h-fit md:min-h-[500px] flex flex-col md:flex-row   gap-[53px] justify-center items-center mt-6 md:mt-25 pb-6 md:pb-0 pt-6 md:pt-0">
 
                 <div className="space-y-6  relative mx-auto md:mx-0">
                     <BannerBadge></BannerBadge>

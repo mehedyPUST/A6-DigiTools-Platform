@@ -1,9 +1,55 @@
 import React from 'react';
+import { Check } from 'lucide-react'; // or import from 'react-icons/fa' or whichever icon library you're using
 
-const ProductCard = () => {
+const ProductCard = ({ products }) => {
     return (
-        <div>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-6 w-11/12 mx-auto'>
+            {
+                products.map((product, index) => {
+                    return (
+                        <div key={product.id || index} className="w-[320px] bg-gray-100 rounded-2xl p-6 shadow-sm relative">
 
+
+
+                            {/* Icon */}
+                            <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center mb-4">
+                                <img src={product.icon} alt="" />
+                            </div>
+
+                            {/* Title */}
+                            <h2 className="text-xl font-semibold text-gray-900 mb-2">
+                                {product.title}
+                            </h2>
+
+                            {/* Description */}
+                            <p className="text-gray-500 text-sm mb-4 leading-relaxed">
+                                {product.description}
+                            </p>
+
+                            {/* Price */}
+                            <div className="mb-4">
+                                <span className="text-2xl font-bold text-gray-900">${product.price}</span>
+                                <span className="text-gray-500 text-sm">/{product.billingPeriod || 'Mo'}</span>
+                            </div>
+
+                            {/* Features */}
+                            <ul className="space-y-2 mb-6">
+                                {product.features.map((feature, idx) => (
+                                    <li key={idx} className="flex items-center gap-2 text-gray-600 text-sm">
+                                        <Check size={16} className="text-green-500" />
+                                        {feature}
+                                    </li>
+                                ))}
+                            </ul>
+
+                            {/* Button */}
+                            <button className="w-full py-3 rounded-full text-white font-medium bg-gradient-to-r from-purple-600 to-pink-500 hover:opacity-90 transition">
+                                {product.buttonText || 'Buy Now'}
+                            </button>
+                        </div>
+                    )
+                })
+            }
         </div>
     );
 };

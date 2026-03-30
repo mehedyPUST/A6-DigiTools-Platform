@@ -55,7 +55,7 @@ const Navbar = () => {
                 </ul>
 
                 <a href="/">
-                    <h1 class="text-2xl md:text-4xl font-extrabold "><span class="bg-linear-to-t from-purple-500 via-purple-700 to-purple-600 bg-clip-text text-transparent">DigiTools</span></h1>
+                    <h1 className="text-2xl md:text-4xl font-extrabold "><span className="bg-linear-to-t from-purple-500 via-purple-700 to-purple-600 bg-clip-text text-transparent">DigiTools</span></h1>
                 </a>
             </span>
             <ul className='hidden md:flex font-bold  '>
