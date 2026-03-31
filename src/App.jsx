@@ -6,6 +6,7 @@ import Products from './components/products/Products'
 import Statistics from './components/statistics/Statistics'
 import Cart from './components/cart/Cart'
 import ProductsHeading from './components/products/productHeading/ProductsHeading'
+import { ToastContainer } from 'react-toastify'
 
 
 const productsData = async () => {
@@ -15,7 +16,7 @@ const productsData = async () => {
 
 const productsPromise = productsData();
 
-function App() {
+function App({ products, product }) {
   const [activeTab, setActiveTab] = useState('products');
   const [cart, setCart] = useState([]);
 
@@ -45,12 +46,12 @@ function App() {
               </div>
               :
               <div>
-                <Cart cart={cart} setCart={setCart}></Cart>
+                <Cart cart={cart} setCart={setCart} products={products} product={product}></Cart>
               </div>
           }
         </Suspense>
       </div>
-
+      <ToastContainer />
     </>
   )
 }
