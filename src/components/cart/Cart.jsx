@@ -1,37 +1,43 @@
+import EmptyCart from "./EmptyCart";
+
 const Cart = ({ cart, setCart }) => {
     const removeFromCart = (id) => {
         setCart(cart.filter(item => item.id !== id));
     };
 
-    const total = cart.reduce((sum, item) => sum + item.price, 0);
+    const total = (cart.reduce((sum, item) => sum + item.price, 0)).toFixed(2);
 
     return (
-        <div>
+        <div className="w-11/12 mx-auto">
+            <h2 className="text-center text-xl font-bold mb-2">Your Cart</h2>
             {cart.length === 0 ? (
-                <p>No products in cart</p>
+                <EmptyCart></EmptyCart>
             ) : (
-                <>
+                <div className="space-y-4">
                     {cart.map(item => (
-                        <div key={item.id} className="shadow-md space-y-2 bg-green-500">
-                            <div className="flex gap-2">
-                                <img className="w-5 h-5" src="/public/favicon.svg" alt={item.name} />
+                        <div key={item.id} className="shadow-md  bg-green-50 rounded-md p-3 flex items-center justify-between">
+                            <div className="flex gap-2 items-center">
+                                <img className="w-10 h-10" src={item.icon} alt={item.name} />
                                 <div>
                                     <p>{item.name}</p>
-                                    <p className="bg-amber-500">Price: {item.price}</p>
-                                    <button
-                                        onClick={() => removeFromCart(item.id)}
-                                        className="bg-red-500 text-white px-2 py-1 rounded mt-2"
-                                    >
-                                        Remove
-                                    </button>
+                                    <p>Price: {item.price}</p>
+
                                 </div>
                             </div>
+                            <button onClick={() => removeFromCart(item.id)}
+                                className="btn bg-linear-to-r from-red-400  to-red-600 rounded-4xl text-white"> Remove</button>
                         </div>
                     ))}
                     <h3>Total: ${total}</h3>
-                </>
-            )}
-        </div>
+                    <div>
+                        <button onClick={() => setCart([])} className="btn">fghfghf</button>
+                    </div>
+                </div>
+
+            )
+            }
+
+        </div >
     );
 };
 

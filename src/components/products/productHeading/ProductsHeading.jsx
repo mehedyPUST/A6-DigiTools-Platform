@@ -7,18 +7,18 @@ const ProductsHeading = ({ setActiveTab, activeTab, cart }) => {
             <p>Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.</p>
 
             <div className='flex justify-center mb-4 mt-4'>
-                <div role="tablist" className="tabs tabs-box px-5 md:px-10 py-2 w-full flex items-center justify-center rounded-xl bg-white shadow-md">
+                <div role="tablist" className="bg-purple-50 tabs tabs-box px-5 md:px-10 py-2 w-full flex items-center justify-center rounded-xl shadow-md">
                     <button
                         onClick={() => setActiveTab('products')}
 
                         role="tab"
-                        className={`tab rounded-full w-30 md:w-40 ${activeTab === 'products' ? 'bg-purple-500 text-white' : ''}`}>Products
+                        className={`tab rounded-full text-purple-500 font-bold w-30 md:w-40 ${activeTab === 'products' ? 'bg-purple-500 text-white' : ''}`}>Products
                     </button>
 
                     <button
                         onClick={() => setActiveTab('cart')}
                         role="tab"
-                        className={`tab rounded-full w-30 md:w-40 ${activeTab === 'cart' ? 'bg-purple-500 text-white' : ''}`}>Cart ({cart.length})
+                        className={`tab rounded-full  text-purple-500 font-bold w-30 md:w-40 ${activeTab === 'cart' ? 'bg-purple-500 text-white' : ''}`}>Cart ({cart.length})
                     </button>
                 </div>
             </div>
