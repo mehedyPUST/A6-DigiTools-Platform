@@ -12,12 +12,18 @@ const Cart = ({ cart, setCart }) => {
             ) : (
                 <>
                     {cart.map(item => (
-                        <div className="shadow-md space-y-2 bg-green-500">
+                        <div key={item.id} className="shadow-md space-y-2 bg-green-500">
                             <div className="flex gap-2">
-                                <img class="w-5 h-5" src="/public/favicon.svg" alt="" />
+                                <img className="w-5 h-5" src="/public/favicon.svg" alt={item.name} />
                                 <div>
-                                    <p>{item.name} </p>
-                                    <p className="bg-amber-500"> Price: {item.price}</p>
+                                    <p>{item.name}</p>
+                                    <p className="bg-amber-500">Price: {item.price}</p>
+                                    <button
+                                        onClick={() => removeFromCart(item.id)}
+                                        className="bg-red-500 text-white px-2 py-1 rounded mt-2"
+                                    >
+                                        Remove
+                                    </button>
                                 </div>
                             </div>
                         </div>

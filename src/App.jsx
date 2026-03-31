@@ -52,9 +52,6 @@
 
 // export default App
 
-
-
-
 import { Suspense, useState } from 'react'
 import './App.css'
 import Banner from './components/banner/Banner'
@@ -79,24 +76,19 @@ function App() {
   return (
     <>
       <div className=''>
-        <Suspense fallback=
-          {
-            <div>Loading...........</div>
-          }>
+        <div className=' bg-white  py-3 shadow-md  sticky top-0 z-50'>
+          <Navbar cart={cart} setCart={setCart} setActiveTab={setActiveTab}></Navbar>
+        </div>
+        <Banner></Banner>
+        <div className='mt-10'>
+          <Statistics></Statistics>
+        </div>
+        <ProductsHeading setActiveTab={setActiveTab} activeTab={activeTab} setCart={setCart} cart={cart} ></ProductsHeading>
+        <Suspense fallback={<div>Loading...........</div>}>
 
           {
             activeTab === 'products' ?
-
               <div>
-                <div className=' bg-white  py-3 shadow-md  sticky top-0 z-50'>
-                  <Navbar cart={cart} setCart={setCart} setActiveTab={setActiveTab}></Navbar>
-                </div>
-                <Banner></Banner>
-                <div className='mt-10'>
-                  <Statistics></Statistics>
-                </div>
-                <ProductsHeading setActiveTab={setActiveTab} activeTab={activeTab} setCart={setCart} cart={cart} ></ProductsHeading>
-
                 <Products
                   productsPromise={productsPromise}
                   activeTab={activeTab}
@@ -107,10 +99,6 @@ function App() {
               </div>
               :
               <div>
-                <div className=' bg-white  py-3 shadow-md  sticky top-0 z-50'>
-                  <Navbar cart={cart} setCart={setCart} setActiveTab={setActiveTab}></Navbar>
-                </div>
-                <ProductsHeading setActiveTab={setActiveTab} activeTab={activeTab} setCart={setCart} cart={cart} ></ProductsHeading>
                 <Cart cart={cart} setCart={setCart}></Cart>
               </div>
           }
