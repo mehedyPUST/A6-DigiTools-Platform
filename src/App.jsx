@@ -7,6 +7,8 @@ import Statistics from './components/statistics/Statistics'
 import Cart from './components/cart/Cart'
 import ProductsHeading from './components/products/productHeading/ProductsHeading'
 import { ToastContainer } from 'react-toastify'
+import GetStarted from './components/getStarted/GetStarted'
+import Pricing from './components/pricing/Pricing'
 
 
 const productsData = async () => {
@@ -50,6 +52,8 @@ function App({ products, product }) {
               </div>
           }
         </Suspense>
+        <GetStarted></GetStarted>
+        <Pricing></Pricing>
       </div>
       <ToastContainer />
     </>
