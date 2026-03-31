@@ -8,7 +8,7 @@ const routes = [
     {
         id: 1,
         name: "Products", //home
-        path: "/products" // 
+        path: "/" // 
     },
     {
         id: 2,
