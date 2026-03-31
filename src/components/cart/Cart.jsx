@@ -1,20 +1,3 @@
-// import React from 'react';
-
-// const Cart = ({ cart, setCart }) => {
-//     console.log(cart)
-//     return (
-//         <div>
-//             {
-//                 cart.length === 0 ? {<p>no product cart empty<p/>} : { cart.map(item => <p>{item.price}</p>) }
-//             }
-
-//         </div>
-//     );
-// };
-
-// export default Cart;
-
-
 const Cart = ({ cart, setCart }) => {
     const removeFromCart = (id) => {
         setCart(cart.filter(item => item.id !== id));
@@ -29,11 +12,14 @@ const Cart = ({ cart, setCart }) => {
             ) : (
                 <>
                     {cart.map(item => (
-                        <div key={item.id}>
-                            <p>Price: ${item.price}</p>
-                            <button className="btn btn-error" onClick={() => removeFromCart(item.id)}>
-                                Remove
-                            </button>
+                        <div className="shadow-md space-y-2 bg-green-500">
+                            <div className="flex gap-2">
+                                <img class="w-5 h-5" src="/public/favicon.svg" alt="" />
+                                <div>
+                                    <p>{item.name} </p>
+                                    <p className="bg-amber-500"> Price: {item.price}</p>
+                                </div>
+                            </div>
                         </div>
                     ))}
                     <h3>Total: ${total}</h3>
