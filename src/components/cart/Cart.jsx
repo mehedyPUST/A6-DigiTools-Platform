@@ -1,10 +1,11 @@
 import React from 'react';
 
 const Cart = ({ cart, setCart }) => {
+    console.log(cart)
     return (
         <div>
 
-            your cart is empty
+            {cart.map(item => <p>{item.price}</p>)}
         </div>
     );
 };

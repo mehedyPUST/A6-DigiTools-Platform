@@ -6,7 +6,7 @@ import ProductCard from "./productCard/ProductCard";
 const ProductsContent = ({ productsPromise, cart, setCart }) => {
     const products = use(productsPromise);   // This will suspend until promise resolves
 
-    console.log('Loaded products:', products);
+    // console.log('Loaded products:', products);
 
     return (
         <div className='w-11/12 mx-auto'>

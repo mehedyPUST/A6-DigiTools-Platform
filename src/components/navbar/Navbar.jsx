@@ -31,7 +31,7 @@ const routes = [
         path: "/faq"
     }
 ];
-const Navbar = () => {
+const Navbar = ({ cart, setCart, setActiveTab }) => {
     const [open, setOpen] = useState(false);
 
     const links = routes.map(route => <Link key={route.id} route={route}></Link>)
@@ -68,7 +68,16 @@ const Navbar = () => {
 
 
             <div className='flex items-center gap-4 font-bold'>
-                <button className='cursor-pointer'><MdOutlineShoppingCart size={20} /></button>
+                <div className='relative inline-block'>
+                    <button onClick={() => setActiveTab('cart')} className='cursor-pointer'>
+                        <MdOutlineShoppingCart size={20} />
+                        {cart.length > 0 ? (
+                            <p className='rounded-full bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center absolute -top-2 -right-2'>
+                                {cart.length}
+                            </p>
+                        ) : null}
+                    </button>
+                </div>
                 <button className='cursor-pointer'>Login</button>
                 <span className='hidden md:block'>
                     <GetStartedBtn></GetStartedBtn>

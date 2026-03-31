@@ -4,8 +4,8 @@ const ProductCard = ({ product, cart, setCart }) => {
     // Check if product is already in cart (better than local state)
     const isInCart = cart.some(item => item.id === product.id);
 
-    const cartHandler = (e) => {
-        e.preventDefault();
+    const cartHandler = () => {
+
         if (!isInCart) {
             setCart(previous => [...previous, product]);
         }

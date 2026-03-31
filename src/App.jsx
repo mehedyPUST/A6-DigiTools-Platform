@@ -89,7 +89,7 @@ function App() {
 
               <div>
                 <div className=' bg-white  py-3 shadow-md  sticky top-0 z-50'>
-                  <Navbar></Navbar>
+                  <Navbar cart={cart} setCart={setCart} setActiveTab={setActiveTab}></Navbar>
                 </div>
                 <Banner></Banner>
                 <div className='mt-10'>
@@ -107,6 +107,9 @@ function App() {
               </div>
               :
               <div>
+                <div className=' bg-white  py-3 shadow-md  sticky top-0 z-50'>
+                  <Navbar cart={cart} setCart={setCart} setActiveTab={setActiveTab}></Navbar>
+                </div>
                 <ProductsHeading setActiveTab={setActiveTab} activeTab={activeTab} setCart={setCart} cart={cart} ></ProductsHeading>
                 <Cart cart={cart} setCart={setCart}></Cart>
               </div>
