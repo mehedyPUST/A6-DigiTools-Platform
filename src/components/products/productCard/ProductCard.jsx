@@ -1,21 +1,17 @@
-import React, { useState } from 'react';
-import { Check } from 'lucide-react'; // or import from 'react-icons/fa' or whichever icon library you're using
-import { TiTick } from 'react-icons/ti';
+import { Check, ShoppingCart } from 'lucide-react';
 
 const ProductCard = ({ product, cart, setCart }) => {
-    const [isAddedToCart, setIsAddedToCart] = useState(false);
-    const cartHandler = () => {
-        const isProductInCart = cart.some(item => item.id === product.id);
-        if (!isProductInCart) {
-            setIsAddedToCart(true);
-            setCart([...cart, product]);
+    // Check if product is already in cart (better than local state)
+    const isInCart = cart.some(item => item.id === product.id);
+
+    const cartHandler = (e) => {
+        e.preventDefault();
+        if (!isInCart) {
+            setCart(previous => [...previous, product]);
         }
-
-    }
-
+    };
 
     return (
-
         <div key={product.id} className=" bg-white border-2 border-gray-50 rounded-2xl p-6 shadow-md relative">
 
             <div className={`badge badge-soft  px-4 py-3 font-bold ${product.tag === 'Best Seller' ? 'badge-warning' : product.tag === 'New' ? 'badge-success' : product.tag === "Popular" ? "badge-primary" : 'badge-info'} absolute top-6 right-6`}>{product.tag}</div>
@@ -51,20 +47,30 @@ const ProductCard = ({ product, cart, setCart }) => {
                 ))}
             </ul>
 
-            {/* Button */}
+            {/* Add to Cart Button */}
             <button
                 onClick={cartHandler}
-                className={`w-full py-3 rounded-full text-white font-medium ${isAddedToCart ? 'bg-linear-to-r from-green-700 to-green-500' : 'bg-linear-to-r from-purple-600 to-pink-500'} hover:opacity-90 transition`}
+                disabled={isInCart}
+                className={`w-full py-3.5 rounded-full font-medium transition-all  text-white flex items-center justify-center gap-2 
+                    ${isInCart
+                        ? 'bg-linear-to-r from-green-600 to-emerald-600 cursor-default'
+                        : 'bg-linear-to-r from-violet-600 to-fuchsia-600 hover:brightness-105 active:scale-[0.985]'
+                    }`}
             >
-                {isAddedToCart ?
-                    <span className='flex items-center gap-1 justify-center'><TiTick />Added to Cart</span>
-                    : 'Add To Cart'
-                }
+                {isInCart ? (
+                    <>
+                        <Check size={20} />
+                        Added to Cart
+                    </>
+                ) : (
+                    <>
+                        <ShoppingCart size={20} />
+                        Add to Cart
+                    </>
+                )}
             </button>
         </div>
-    )
-}
+    );
+};
 
 export default ProductCard;
-
-

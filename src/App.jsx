@@ -69,18 +69,20 @@ const productsData = async () => {
   const res = await fetch('/productsData.json');
   return res.json();
 }
+
 const productsPromise = productsData();
+
 function App() {
   const [activeTab, setActiveTab] = useState('products');
   const [cart, setCart] = useState([]);
 
   return (
     <>
-
-
-
-      <div className='mt-10'>
-        <Suspense fallback={<div>Loading...........</div>}>
+      <div className=''>
+        <Suspense fallback=
+          {
+            <div>Loading...........</div>
+          }>
 
           {
             activeTab === 'products' ?

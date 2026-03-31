@@ -10,6 +10,7 @@ const ProductsHeading = ({ setActiveTab, activeTab, cart }) => {
                 <div role="tablist" className="tabs tabs-box px-10 py-2 rounded-xl bg-white shadow-md">
                     <button
                         onClick={() => setActiveTab('products')}
+
                         role="tab"
                         className={`tab rounded-full w-40 ${activeTab === 'products' ? 'bg-purple-500 text-white' : ''}`}>Products
                     </button>
