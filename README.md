@@ -1,4 +1,4 @@
-## Priject Name:  Digi Tools Platform
+## Project Name: Digi Tools Platform
 
 A modern digital solutions platform designed to empower users with cutting-edge tools and services for building, managing, and scaling digital experiences.
 
@@ -20,8 +20,10 @@ Digi Tools Platform is a sleek and responsive web application that provides user
 ## Features
   Modern UI/UX Design
 Clean, responsive, and visually appealing interface for better user experience.
+
  Pricing & Plans System
 Multiple pricing tiers (Basic, Business, Enterprise) to fit different user needs.
+
  Fully Responsive & Fast
 Optimized for all devices with fast loading performance using modern deployment tools.
 
