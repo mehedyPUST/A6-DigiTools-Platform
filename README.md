@@ -1,16 +1,21 @@
-# React + Vite
+🚀 Digi Tools Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern digital solutions platform designed to empower users with cutting-edge tools and services for building, managing, and scaling digital experiences.
 
-Currently, two official plugins are available:
+📌 Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Digi Tools Platform is a sleek and responsive web application that provides users with powerful digital solutions including website services, analytics, and scalable tools. The platform focuses on simplicity, performance, and user-friendly design to help individuals and businesses grow in the digital era.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+⚙️ Technologies Used
+⚛️ React.js
+🎨 Tailwind CSS
+⚡ Vite
+🌐 Vercel (Deployment)
+🧩 JavaScript (ES6+)
+✨ Features
+🚀 Modern UI/UX Design
+Clean, responsive, and visually appealing interface for better user experience.
+📊 Pricing & Plans System
+Multiple pricing tiers (Basic, Business, Enterprise) to fit different user needs.
+🌍 Fully Responsive & Fast
+Optimized for all devices with fast loading performance using modern deployment tools.
