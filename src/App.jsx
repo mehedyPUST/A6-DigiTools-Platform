@@ -9,6 +9,9 @@ import ProductsHeading from './components/products/productHeading/ProductsHeadin
 import { ToastContainer } from 'react-toastify'
 import GetStarted from './components/getStarted/GetStarted'
 import Pricing from './components/pricing/Pricing'
+import WorkFlow from './components/workFlow/WorkFlow'
+
+import Footer from './components/footer/Footer'
 
 
 const productsData = async () => {
@@ -54,6 +57,8 @@ function App({ products, product }) {
         </Suspense>
         <GetStarted></GetStarted>
         <Pricing></Pricing>
+        <WorkFlow></WorkFlow>
+        <Footer></Footer>
       </div>
       <ToastContainer />
     </>
