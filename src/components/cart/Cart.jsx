@@ -31,7 +31,7 @@ const Cart = ({ cart, setCart }) => {
                                 </div>
                             </div>
                             <button onClick={() => removeFromCart(item.id, item.name)}
-                                className=" text-[#FF3980]"> Remove</button>
+                                className=" text-[#FF3980] cursor-pointer"> Remove</button>
                         </div>
                     ))}
                     <div className="flex justify-between items-center">
