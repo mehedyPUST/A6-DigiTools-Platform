@@ -10,7 +10,6 @@ import { ToastContainer } from 'react-toastify'
 import GetStarted from './components/getStarted/GetStarted'
 import Pricing from './components/pricing/Pricing'
 import WorkFlow from './components/workFlow/WorkFlow'
-
 import Footer from './components/footer/Footer'
 
 
