@@ -1,4 +1,4 @@
-## Project Name: Digi Tools Platform
+## Project Name: DigiTools Platform
 
 A modern digital solutions platform designed to empower users with cutting-edge tools and services for building, managing, and scaling digital experiences.
 
