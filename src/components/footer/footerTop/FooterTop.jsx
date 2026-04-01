@@ -45,44 +45,55 @@ const footerInfo = {
 
 const FooterTop = () => {
     return (
-        <div className='grid grid-cols-17 w-11/12 mx-auto gap-10'>
-            <div className='col-span-4 space-y-3'>
-                <h1 className="text-2xl md:text-4xl font-extrabold text-white ">{footerInfo.brand}</h1>
-                <p className=' text-white'>{footerInfo.description}</p>
+        <div className='grid grid-cols-1 md:grid-cols-5 gap-8 w-11/12 mx-auto'>
+
+            {/* LEFT */}
+            <div className='md:col-span-1 space-y-3 text-center md:text-left'>
+                <h1 className="text-2xl md:text-4xl font-extrabold text-white">
+                    {footerInfo.brand}
+                </h1>
+                <p className='text-white text-sm md:text-base'>
+                    {footerInfo.description}
+                </p>
+                <hr className='border-gray-600 md:hidden' />
             </div>
 
-            <div className='col-span-9 grid grid-cols-3 text-white'>
-                {footerData.map((footerDataTitle) => {
-                    return (
-                        <div>
-                            <h3 className='text-white text-xl'>{footerDataTitle.title}</h3>
-                            <ul>
-                                {footerDataTitle.links.map(link => {
-                                    return (
-                                        <li>
-                                            <a href={link.path}>{link.name}</a>
-                                        </li>
-                                    )
-                                })}
-                            </ul>
-                        </div>
+            {/* MIDDLE (3 columns) */}
+            <div className='md:col-span-3 grid grid-cols-3 gap-8 text-white'>
 
-
-                    )
-
-                })}
+                {footerData.map((item) => (
+                    <div key={item.id}>
+                        <h3 className='text-lg md:text-xl font-semibold mb-2'>
+                            {item.title}
+                        </h3>
+                        <ul className='space-y-1'>
+                            {item.links.map(link => (
+                                <li key={link.id} className='hover:text-gray-300 transition'>
+                                    <a href={link.path}>{link.name}</a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                ))}
 
             </div>
 
-            <div className='col-span-4 space-y-3 text-white'>
-                <h3>Social Links</h3>
+            {/* RIGHT */}
+            <div className='md:col-span-1 space-y-3 text-white'>
+                <h3 className='text-lg font-semibold'>Social Links</h3>
                 <ul className='flex items-center gap-4'>
-                    <li className='bg-white text-blue-950 rounded-md p-0.75'><a href="/"> <RiInstagramFill /></a></li>
-                    <li className='bg-white text-blue-950 rounded-md p-0.75'><a href="/"> <FaFacebookSquare /></a></li>
-                    <li className='bg-white text-blue-950 rounded-md p-0.75'><a href="/"> <FaXTwitter /></a></li>
-
+                    <li className='bg-white text-blue-950 rounded-md p-1'>
+                        <RiInstagramFill />
+                    </li>
+                    <li className='bg-white text-blue-950 rounded-md p-1'>
+                        <FaFacebookSquare />
+                    </li>
+                    <li className='bg-white text-blue-950 rounded-md p-1'>
+                        <FaXTwitter />
+                    </li>
                 </ul>
             </div>
+
         </div>
     );
 };
