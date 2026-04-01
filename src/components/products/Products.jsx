@@ -26,7 +26,12 @@ const Products = ({ productsPromise, cart, setCart }) => {
     return (
         <Suspense fallback={
             <div className="flex justify-center items-center min-h-75">
-                <span className="loading loading-spinner loading-lg"></span>
+                <span className="loading loading-spinner text-primary"></span>
+                <span className="loading loading-spinner text-secondary"></span>
+
+                <span className="loading loading-infinity loading-xl"></span>
+                <span className="loading loading-spinner text-warning"></span>
+                <span className="loading loading-spinner text-error"></span>
             </div>
         }>
             <ProductsContent
