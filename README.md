@@ -1,21 +1,27 @@
-🚀 Digi Tools Platform
+## Priject Name:  Digi Tools Platform
 
 A modern digital solutions platform designed to empower users with cutting-edge tools and services for building, managing, and scaling digital experiences.
 
-📌 Description
+## Description
 
 Digi Tools Platform is a sleek and responsive web application that provides users with powerful digital solutions including website services, analytics, and scalable tools. The platform focuses on simplicity, performance, and user-friendly design to help individuals and businesses grow in the digital era.
 
-⚙️ Technologies Used
+## Technologies Used
 ⚛️ React.js
+
 🎨 Tailwind CSS
+
 ⚡ Vite
+
 🌐 Vercel (Deployment)
+
 🧩 JavaScript (ES6+)
-✨ Features
-🚀 Modern UI/UX Design
+
+## Features
+  Modern UI/UX Design
 Clean, responsive, and visually appealing interface for better user experience.
-📊 Pricing & Plans System
+ Pricing & Plans System
 Multiple pricing tiers (Basic, Business, Enterprise) to fit different user needs.
-🌍 Fully Responsive & Fast
+ Fully Responsive & Fast
 Optimized for all devices with fast loading performance using modern deployment tools.
+
