@@ -4,7 +4,9 @@ A modern digital solutions platform designed to empower users with cutting-edge 
 
 ## Description
 
-Digi Tools Platform is a sleek and responsive web application that provides users with powerful digital solutions including website services, analytics, and scalable tools. The platform focuses on simplicity, performance, and user-friendly design to help individuals and businesses grow in the digital era. The Products Card are designed based on Json Data. Pricing section Cards also designed based on array like object data . easy to scale data further . 
+DigiTools Platform is a sleek, responsive web app that provides powerful digital solutions—including website services, analytics, and scalable tools. It emphasizes simplicity, performance, and user-friendly design to support individuals and businesses in the digital era. Both the product cards (JSON-driven) and pricing section cards (built from array-like object data) are structured for easy scaling.
+
+
 
 ## Technologies Used
 ⚛️ React.js
