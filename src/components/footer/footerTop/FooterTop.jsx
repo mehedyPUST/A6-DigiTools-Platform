@@ -47,9 +47,9 @@ const FooterTop = () => {
     return (
         <div className='grid grid-cols-1 md:grid-cols-5 gap-8 w-11/12 mx-auto'>
 
-            {/* LEFT */}
+
             <div className='md:col-span-1 space-y-3 text-center md:text-left'>
-                <h1 className="text-2xl md:text-4xl font-extrabold text-white">
+                <h1 className="text-2xl md:text-4xl font-bold md:font-extrabold text-white">
                     {footerInfo.brand}
                 </h1>
                 <p className='text-white text-sm md:text-base'>
@@ -58,17 +58,17 @@ const FooterTop = () => {
                 <hr className='border-gray-600 md:hidden' />
             </div>
 
-            {/* MIDDLE (3 columns) */}
+
             <div className='md:col-span-3 grid grid-cols-3 gap-8 text-white'>
 
                 {footerData.map((item) => (
                     <div key={item.id}>
-                        <h3 className='text-lg md:text-xl font-semibold mb-2'>
+                        <h3 className='text-md md:text-xl font-semibold mb-2'>
                             {item.title}
                         </h3>
                         <ul className='space-y-1'>
                             {item.links.map(link => (
-                                <li key={link.id} className='hover:text-gray-300 transition'>
+                                <li key={link.id} className='hover:text-gray-300 transition text-sm md:text-base'>
                                     <a href={link.path}>{link.name}</a>
                                 </li>
                             ))}
@@ -78,17 +78,17 @@ const FooterTop = () => {
 
             </div>
 
-            {/* RIGHT */}
+
             <div className='md:col-span-1 space-y-3 text-white'>
-                <h3 className='text-lg font-semibold'>Social Links</h3>
+                <h3 className='text-md md:text-lg font-semibold '>Social Links</h3>
                 <ul className='flex items-center gap-4'>
-                    <li className='bg-white text-blue-950 rounded-md p-1'>
+                    <li className='bg-white text-blue-950 rounded-md cursor-pointer p-1'>
                         <RiInstagramFill />
                     </li>
-                    <li className='bg-white text-blue-950 rounded-md p-1'>
+                    <li className='bg-white text-blue-950 rounded-md cursor-pointer p-1'>
                         <FaFacebookSquare />
                     </li>
-                    <li className='bg-white text-blue-950 rounded-md p-1'>
+                    <li className='bg-white text-blue-950 rounded-md cursor-pointer p-1'>
                         <FaXTwitter />
                     </li>
                 </ul>

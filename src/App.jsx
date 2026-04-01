@@ -11,8 +11,6 @@ import GetStarted from './components/getStarted/GetStarted'
 import Pricing from './components/pricing/Pricing'
 import WorkFlow from './components/workFlow/WorkFlow'
 import Footer from './components/footer/Footer'
-
-
 const productsData = async () => {
   const res = await fetch('/productsData.json');
   return res.json();
