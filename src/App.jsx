@@ -35,25 +35,25 @@ function App({ products, product }) {
           <Statistics></Statistics>
         </div>
         <ProductsHeading setActiveTab={setActiveTab} activeTab={activeTab} setCart={setCart} cart={cart} ></ProductsHeading>
-        <Suspense fallback={<div>Loading...........</div>}>
 
-          {
-            activeTab === 'products' ?
-              <div>
-                <Products
-                  productsPromise={productsPromise}
-                  activeTab={activeTab}
-                  setActiveTab={setActiveTab}
-                  cart={cart}
-                  setCart={setCart}
-                ></Products>
-              </div>
-              :
-              <div>
-                <Cart cart={cart} setCart={setCart} products={products} product={product}></Cart>
-              </div>
-          }
-        </Suspense>
+
+        {
+          activeTab === 'products' ?
+            <div>
+              <Products
+                productsPromise={productsPromise}
+                activeTab={activeTab}
+                setActiveTab={setActiveTab}
+                cart={cart}
+                setCart={setCart}
+              ></Products>
+            </div>
+            :
+            <div>
+              <Cart cart={cart} setCart={setCart} products={products} product={product}></Cart>
+            </div>
+        }
+
         <GetStarted></GetStarted>
         <Pricing></Pricing>
         <WorkFlow></WorkFlow>

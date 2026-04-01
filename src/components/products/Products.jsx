@@ -1,12 +1,10 @@
 import React, { Suspense } from 'react';
-import { use } from 'react';           // React 19 use() hook
+import { use } from 'react';
 import ProductCard from "./productCard/ProductCard";
 
 
 const ProductsContent = ({ productsPromise, cart, setCart }) => {
-    const products = use(productsPromise);   // This will suspend until promise resolves
-
-    // console.log('Loaded products:', products);
+    const products = use(productsPromise);
 
     return (
         <div className='w-11/12 mx-auto'>
@@ -24,11 +22,11 @@ const ProductsContent = ({ productsPromise, cart, setCart }) => {
     );
 };
 
-const Products = ({ productsPromise, activeTab, setActiveTab, cart, setCart }) => {
+const Products = ({ productsPromise, cart, setCart }) => {
     return (
         <Suspense fallback={
-            <div className="w-11/12 mx-auto py-12 text-center">
-                <p className="text-gray-500">Loading products...</p>
+            <div className="flex justify-center items-center min-h-75">
+                <span className="loading loading-spinner loading-lg"></span>
             </div>
         }>
             <ProductsContent
